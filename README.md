@@ -28,7 +28,7 @@ cp -r resources/scripts/themes/ resources/scripts/themes_backup/
 
 3. Clone this theme repository (replace YOUR_USERNAME with your GitHub username)
 ```bash
-git clone https://github.com/YOUR_USERNAME/qtemp-theme.git
+git clone https://github.com/QtempStudio/qtemp-theme.git
 cd qtemp-theme
 ```
 
@@ -50,7 +50,7 @@ yarn build:production
 
 1. Download and run the installation script (replace YOUR_USERNAME with your GitHub username)
 ```bash
-curl -L https://raw.githubusercontent.com/YOUR_USERNAME/qtemp-theme/main/install.sh | bash
+curl -L https://raw.githubusercontent.com/QtempStudio/qtemp-theme/main/install.sh | bash
 ```
 
 ## Customization
