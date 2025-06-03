@@ -26,7 +26,7 @@ cd /var/www/pterodactyl
 cp -r resources/scripts/themes/ resources/scripts/themes_backup/
 ```
 
-3. Clone this theme repository (replace YOUR_USERNAME with your GitHub username)
+3. Clone this theme repository
 ```bash
 git clone https://github.com/QtempStudio/qtemp-theme.git
 cd qtemp-theme
@@ -48,7 +48,7 @@ yarn build:production
 
 ### Quick Installation (Script)
 
-1. Download and run the installation script (replace YOUR_USERNAME with your GitHub username)
+1. Download and run the installation script
 ```bash
 curl -L https://raw.githubusercontent.com/QtempStudio/qtemp-theme/main/install.sh | bash
 ```
