@@ -1,6 +1,7 @@
 import { Theme } from '../types';
 import { getThemeVariables } from './variables';
 import { createTheme } from '../helpers';
+import { assets } from './assets';
 
 // Theme variant can be changed here
 const THEME_VARIANT: 'default' | 'dark' | 'light' = 'default';
@@ -10,6 +11,12 @@ const theme: Theme = {
     
     // Get theme variables based on selected variant
     variables: getThemeVariables(THEME_VARIANT),
+
+    // Assets configuration
+    assets: {
+        logo: assets.logo,
+        logoText: assets.logoText,
+    },
 
     // Custom styles for components
     styles: {
@@ -129,6 +136,23 @@ const theme: Theme = {
                 font-weight: var(--font-weight-medium);
             `,
         },
+        logo: {
+            container: `
+                display: flex;
+                align-items: center;
+                gap: calc(var(--spacing-base) * 0.75);
+                padding: calc(var(--spacing-base) * 1.5);
+            `,
+            image: `
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            `,
+            text: `
+                height: 24px;
+                object-fit: contain;
+            `,
+        },
     },
 
     // Global styles
@@ -140,6 +164,21 @@ const theme: Theme = {
             background: var(--background);
             color: var(--default-text-color);
             line-height: 1.5;
+        }
+
+        // Logo styles
+        .qtemp-logo {
+            display: flex;
+            align-items: center;
+            gap: calc(var(--spacing-base) * 0.75);
+            
+            img {
+                transition: transform var(--transition-speed) var(--transition-easing);
+                
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
         }
 
         // Sidebar styles
